@@ -15,6 +15,71 @@
             justify-content: center; /* Centers the content horizontally */
         }
         .container {
+            display: none; /* Hide content by default */
+            width: 80%;
+            max-width: 1200px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            border-bottom: 1px solid #ddd;
+        }
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            padding-left: 0;
+            list-style-position: inside;
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Password protection logic
+        const correctPassword = "mySecretCode"; // Set your password here
+
+        function askForPassword() {
+            const password = prompt("Please enter the password:");
+            if (password === correctPassword) {
+                document.querySelector(".container").style.display = "block"; // Show the content if the password is correct
+            } else {
+                alert("Incorrect password. Access denied.");
+                document.body.innerHTML = ""; // Clear content if the password is incorrect
+            }
+        }
+    </script>
+</head>
+<body onload="askForPassword()">
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyelly and Cian ❤️</title>
+    <style>
+        /* Basic styling for the sections and images */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centers the content horizontally */
+        }
+        .container {
             width: 80%; /* This makes the content take 80% of the width */
             max-width: 1200px; /* Sets a maximum width for large screens */
         }
@@ -58,8 +123,8 @@
         <section id="section-one">
             <h2>Some of my Notes that I've written over the past few weeks ❤️</h2>
             <p>What we have is, in my eyes, definitely worth fighting for. Across all aspects of life the best things come after hard work and sacrifice. Perseverance through hard times and seeing the rewards only make the good times sweeter. Like training hard all year and fighting as hard as you can to end up winning championship or you for instance fighting so hard during college despite so many things against you and to still end up with a first. That fight and perseverance that you have within you is something I'm so proud of and I really admire that in you. I really believe that what we have is not worth giving up on because of a few bad months. We are at our lowest point ever now but I firmly believe the only way is up from here if we get back together. I've learned so much over the last few weeks and above all I think the biggest thing I've learned is that I took what we had for granted. I became complacent and too comfortable in the relationship and this led to bad habits forming like not making enough effort and not treating you the way you deserve to be treated. The best things in life, from my experience, are things you have to work the hardest for and I promise I will work harder than ever to make this work because I know what we have is worth it</p>
-            <p>Actions speak much louder than words and we can sit here talking about what we want but at the end of the day our future trust will be built on the actions we both take. That started with the cards that you wrote me for the our anniversary and my graduation. These small things meant so much to me and made me realise why I fell in love with you and why I still am in love with you so much. It reminded me of who you really are and I believe one moment on one night will not define you or us❤️<p>
-            <p>“It is a curious thought, but it is only when you see people looking ridiculous, that you realize just how much you love them.” — Agatha Christie<p>
+            <p>Actions speak much louder than words and we can sit here talking about what we want but at the end of the day our future trust will be built on the actions we both take. That started with the cards that you wrote me for the our anniversary and my graduation. These small things meant so much to me and made me realise why I fell in love with you and why I still am in love with you so much. It reminded me of who you really are and I believe one moment on one night will not define you or us</p>
+            <p>“It is a curious thought, but it is only when you see people looking ridiculous, that you realize just how much you love them.” — Agatha Christie</p>
             
         </section>
 
@@ -100,7 +165,7 @@
             </ul>
             <!-- Add an image for Section Three using a local image -->
             <img src="images/PXL_20240922_195151668~2.jpg" alt="Section Three Image">
-            <p>I love you so much xxx<p>
+            <p>I love you so much xxx<p/>
         </section>
     </div>
 
