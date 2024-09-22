@@ -1,17 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website with Sections</title>
+    <title>Nyelly and Cian</title>
     <style>
         /* Basic styling for the sections and images */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center; /* Centers the content horizontally */
+        }
+        .container {
+            width: 80%; /* This makes the content take 80% of the width */
+            max-width: 1200px; /* Sets a maximum width for large screens */
         }
         header {
             background-color: #4CAF50;
@@ -21,48 +26,82 @@
         }
         section {
             padding: 20px;
-            margin: 10px 0;
+            margin: 20px auto;
             border-bottom: 1px solid #ddd;
         }
         h2 {
             color: #4CAF50;
+            text-align: center;
         }
         img {
+            display: block;
+            margin: 0 auto;
             max-width: 100%;
             height: auto;
+        }
+        ul {
+            padding-left: 0; /* Remove left padding from ul */
+            list-style-position: inside; /* Move bullet points inside the list item */
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>This site contains three sections: One, Two, and Three.</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Cian and Nyelly</h1>
+            <p>Made this just to share my thoughts cause ILY and I'm bored on a Sunday lol</p>
+        </header>
 
-    <!-- Section One -->
-    <section id="section-one">
-        <h2>Section One</h2>
-        <p>This is the first section of the website.</p>
-        <!-- Add an image for Section One -->
-        <img src="https://via.placeholder.com/600x300.png?text=Section+One+Image" alt="Section One Image">
-    </section>
+        <!-- Section One -->
+        <section id="section-one">
+            <h2>Section One</h2>
+            <p>This is a longer paragraph where you can write more details about what you're thinking. Just sharing some thoughts and maybe ideas about the day, life, or anything in general that crosses your mind. Enjoy the little things and keep it real!</p>
+            <!-- Add an image for Section One using a local image -->
+            <img src="images/section-one.jpg" alt="Section One Image">
+        </section>
 
-    <!-- Section Two -->
-    <section id="section-two">
-        <h2>Section Two</h2>
-        <p>This is the second section of the website.</p>
-        <!-- Add an image for Section Two -->
-        <img src="https://via.placeholder.com/600x300.png?text=Section+Two+Image" alt="Section Two Image">
-    </section>
+        <!-- Section Two -->
+        <section id="section-two">
+            <h2>Section Two</h2>
+            <p>Here are ten interesting points I wanted to share with you:</p>
+            <ul>
+                <li>First point of interest.</li>
+                <li>Second point is here.</li>
+                <li>Third point goes like this.</li>
+                <li>Fourth point is pretty cool.</li>
+                <li>Fifth point you should know about.</li>
+                <li>Sixth point might surprise you.</li>
+                <li>Seventh point is another thought.</li>
+                <li>Eighth point is interesting.</li>
+                <li>Ninth point is also good to mention.</li>
+                <li>Tenth and final point to share today.</li>
+            </ul>
+            <!-- Add an image for Section Two using a local image -->
+            <img src="images/section-two.jpg" alt="Section Two Image">
+        </section>
 
-    <!-- Section Three -->
-    <section id="section-three">
-        <h2>Section Three</h2>
-        <p>This is the third section of the website.</p>
-        <!-- Add an image for Section Three -->
-        <img src="https://via.placeholder.com/600x300.png?text=Section+Three+Image" alt="Section Three Image">
-    </section>
+        <!-- Section Three -->
+        <section id="section-three">
+            <h2>Section Three</h2>
+            <p>Here are ten more things that came to mind:</p>
+            <ul>
+                <li>First thought of this section.</li>
+                <li>Second thought on my mind.</li>
+                <li>Third interesting thought.</li>
+                <li>Fourth idea I wanted to share.</li>
+                <li>Fifth thing that popped up.</li>
+                <li>Sixth random but cool thing.</li>
+                <li>Seventh point worth mentioning.</li>
+                <li>Eighth idea I had.</li>
+                <li>Ninth idea just for fun.</li>
+                <li>Tenth and final thought to wrap it up.</li>
+            </ul>
+            <!-- Add an image for Section Three using a local image -->
+            <img src="images/section-three.jpg" alt="Section Three Image">
+        </section>
+    </div>
 
 </body>
 </html>
