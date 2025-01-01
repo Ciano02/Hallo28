@@ -45,6 +45,17 @@
             list-style-position: inside;
             text-align: center;
         }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+        .image-grid img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
     </style>
     <script>
         // Password protection logic
@@ -62,56 +73,6 @@
     </script>
 </head>
 <body onload="askForPassword()">
-    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyelly and Cian ❤️</title>
-    <style>
-        /* Basic styling for the sections and images */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; /* Centers the content horizontally */
-        }
-        .container {
-            width: 80%; /* This makes the content take 80% of the width */
-            max-width: 1200px; /* Sets a maximum width for large screens */
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            border-bottom: 1px solid #ddd;
-        }
-        h2 {
-            color: #4CAF50;
-            text-align: center;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
-        ul {
-            padding-left: 0; /* Remove left padding from ul */
-            list-style-position: inside; /* Move bullet points inside the list item */
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
 
     <div class="container">
         <header>
@@ -122,6 +83,19 @@
         <!-- Section One -->
         <section id="section-one">
             <h2>I love you always no matter what my Nyelly ❤️❤️❤️</h2>            
+        </section>
+
+        <!-- New Section for Images -->
+        <section id="image-gallery">
+            <h2>Our Special Moments in Pictures</h2>
+            <div class="image-grid">
+                <img src="images/image1.jpg" alt="Special moment 1">
+                <img src="images/image2.jpg" alt="Special moment 2">
+                <img src="images/image3.jpg" alt="Special moment 3">
+                <img src="images/image4.jpg" alt="Special moment 4">
+                <img src="images/image5.jpg" alt="Special moment 5">
+                <img src="images/image6.jpg" alt="Special moment 6">
+            </div>
         </section>
 
         <!-- Section Two -->
